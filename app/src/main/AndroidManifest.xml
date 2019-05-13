@@ -14,12 +14,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_maveri_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_maveri_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignIn.ActivitySignIn">
+        <activity android:name=".Profile.ActivityProfile">
         <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,7 +39,7 @@
         <activity android:name=".CreateAccount.ActivityCreateProfile"></activity>
         <activity android:name=".AnimationLoad" />
         <activity android:name=".Group.ActivityCreateInfoGroup" />
-        <activity android:name=".Profile.ActivityProfile" />
+        <activity android:name=".SignIn.ActivitySignIn" />
         <activity android:name=".Group.ActivityGroup" />
         <activity android:name=".Group.ActivityGroupList"/>
         <activity android:name=".Group.ActivityCreateSelectPlaceGroup" />

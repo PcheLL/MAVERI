@@ -31,7 +31,7 @@
                         android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/image"
+                        android:src="@drawable/question"
                         app:civ_border="true"
                         app:civ_border_color="@color/colorAccent"
                         app:civ_border_width="3dp"/>
