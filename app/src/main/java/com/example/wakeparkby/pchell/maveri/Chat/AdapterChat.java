@@ -16,7 +16,7 @@ import java.util.Date;
 public class AdapterChat {
 
     private String groupId;
-    ListMessage listMessage = new ListMessage();
+    private ListMessage listMessage;
     ListMeetingUserOnChat listMeetingUserOnChat = new ListMeetingUserOnChat();
     //DatabaseMessage databaseMessage = new DatabaseMessage();
 
@@ -33,6 +33,7 @@ public class AdapterChat {
         } else if (userKey1.hashCode() == userKey.hashCode()) {
             groupId = userKey1.concat(userKey);
         }
+        listMessage = new ListMessage();
         listMessage.setGroupId(groupId);
         listMeetingUserOnChat.loadMeeting(groupId);
     }

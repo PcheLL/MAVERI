@@ -52,35 +52,7 @@ public class ActivityChat extends AppCompatActivity implements View.OnClickListe
     protected MessageController messageController;
 
 
-    ObserverMessage observer = new ObserverMessage("Chat") {
-
-        /**
-         * перегруженный метод обновления для частного экземпляра класса наблюдатель
-         * в данном случае при обновлении обновляется либо основной чат, либо чат встреч
-         */
-
-        @Override
-        public void update() {
-            int n = observer.getStatus();
-
-            if (n == 10) {
-
-                if (observer.getId() == 1) {
-                    refreshChat();
-                    observer.setId(0);
-                } else {
-                }
-                if (observer.getId() == 2) {
-                    refreshChatMeeting();
-                    observer.setId(0);
-                } else {
-                }
-            }
-        }
-
-
-    };
-
+    ObserverMessage observer;
 
     /**
      * метод создания объекта
@@ -88,24 +60,53 @@ public class ActivityChat extends AppCompatActivity implements View.OnClickListe
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        observer = new ObserverMessage("Chat") {
+
+            /**
+             * перегруженный метод обновления для частного экземпляра класса наблюдатель
+             * в данном случае при обновлении обновляется либо основной чат, либо чат встреч
+             */
+
+            @Override
+            public void update() {
+                int n = observer.getStatus();
+                if (n == 10) {
+
+                    if (observer.getId() == 1) {
+                        refreshChat();
+                        observer.setId(0);
+                    } else {
+                    }
+                    if (observer.getId() == 2) {
+                        refreshChatMeeting();
+                        observer.setId(0);
+                    } else {
+                    }
+                }
+            }
+
+
+        };
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
         recyclerViewChat = findViewById(R.id.chatWindow);
         sendButton = findViewById(R.id.sendButton);
         messageArea = findViewById(R.id.messageArea);
         sendButton.setOnClickListener(this);
-        messageController = new MessageController();
+         messageController = new MessageController();
         recyclerViewChat.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewChat.setAdapter(messageController);
         // adapterChat.getListMessage(profile.getUserKey(),);
         //groupId = adapterChat.getGroupId();
         selectPlaceButton = findViewById(R.id.placeButton);
         selectPlaceButton.setOnClickListener(this);
+        int a=observer.getId();
+
 
 
 
         System.out.print("");
-        //refreshChat();
+
     }
 
 
@@ -113,10 +114,12 @@ public class ActivityChat extends AppCompatActivity implements View.OnClickListe
      * метод обновляющий чат
      */
     public void refreshChat() {
+
         String messageUserName = null;
         String messageDate = null;
         String messageUser = null;
         chatList = Profile.getInstance().getAdapterChat().getListMessage().getMessages();
+        messageController.messageList.clear();
         for (int i = 0; i < chatList.size(); i++){
             String message = chatList.get(i);
             int fl = 0;
@@ -146,6 +149,8 @@ public class ActivityChat extends AppCompatActivity implements View.OnClickListe
                 messageController.messageList.add(new Message(messageUser, messageDate , false));
             }
         }
+       int i= messageController.getItemCount();
+        messageController.notifyDataSetChanged();
 
 
         // chatList.clear();
@@ -193,6 +198,12 @@ public class ActivityChat extends AppCompatActivity implements View.OnClickListe
                 break;
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        observer.removeFromList(observer);
     }
 
     /**

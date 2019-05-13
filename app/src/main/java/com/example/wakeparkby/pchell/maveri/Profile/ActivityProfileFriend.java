@@ -73,7 +73,7 @@ public class ActivityProfileFriend extends AppCompatActivity implements View.OnC
 
         }
         else {
-            Toast.makeText(this, "НЕТ В ДРУЗЬЯХ", Toast.LENGTH_SHORT).show();
+            Toast.makeText( this, "НЕТ В ДРУЗЬЯХ", Toast.LENGTH_SHORT).show();
             friend.setBackgroundResource(R.drawable.buttonmeeting);
         }
     }

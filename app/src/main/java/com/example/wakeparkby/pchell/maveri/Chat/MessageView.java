@@ -25,7 +25,6 @@ public class MessageView extends RecyclerView.ViewHolder {
 
 
     }
-    ProfileFriend pro = new ProfileFriend();
     public void bind(Message message) {
         messageText.setText(message.text);
         messageTime.setText(message.date);
