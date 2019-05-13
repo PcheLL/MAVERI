@@ -16,6 +16,7 @@
         android:background="@drawable/purple_bubble"
         android:foregroundGravity=""
         android:maxWidth="300dp"
+        android:minWidth="130dp"
         android:padding="8dp"
         android:text="Привет!!! Привет!!! Привет!!! Привет!!! v v vПривет!!! Привет!!! Привет!!!"
         android:textColor="#FFFFFF"

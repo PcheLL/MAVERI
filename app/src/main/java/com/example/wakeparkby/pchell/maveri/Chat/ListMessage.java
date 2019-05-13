@@ -33,7 +33,7 @@ public class ListMessage {
     }
 
     /**
-     * метод для устоановки общего номера пользователей
+     * метод для установки общего номера пользователей
      * @param groupId общий номер
      */
     public void setGroupId(String groupId) {
