@@ -60,10 +60,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="ic_launcher_background" />
                                       <entry key="foregroundImage" value="C:\Users\XiAOMi\Desktop\Logo.png" />
-                                      <entry key="foregroundLayerName" value="ic_launcher" />
-                                      <entry key="outputName" value="launcher" />
                                     </map>
                                   </option>
                                 </PersistentState>
