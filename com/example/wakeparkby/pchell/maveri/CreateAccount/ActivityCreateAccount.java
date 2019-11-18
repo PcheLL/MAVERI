@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.CreateAccount;
+package com.corp.maveri.pchell.maveri.CreateAccount;
 
 import android.support.v7.app.*;
 import View.*;
@@ -32,7 +32,7 @@ public class ActivityCreateAccount extends AppCompatActivity implements OnClickL
 	}
 
 	/**
-	 * -----Реги�?траци�? в базе данных нового пользовател�?
+	 * -----Реги�?траци�? в базе данных нового пользовател�?
 	 * @param email
 	 * @param password
 	 * @return 

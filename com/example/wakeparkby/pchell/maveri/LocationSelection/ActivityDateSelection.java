@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.LocationSelection;
+package com.corp.maveri.pchell.maveri.LocationSelection;
 
 import android.support.v7.app.*;
 import View.*;

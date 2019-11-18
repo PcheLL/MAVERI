@@ -15,7 +15,7 @@
         android:text="ЗАЯВКИ В ДРУЗЬЯ"
         android:layout_gravity="center_horizontal"/>
     <fragment
-        class="com.example.wakeparkby.pchell.maveri.Friend.RequestFriend.RequestListFragment"
+        class="com.corp.maveri.pchell.maveri.Friend.RequestFriend.RequestListFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />

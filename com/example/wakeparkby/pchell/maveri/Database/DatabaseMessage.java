@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.Database;
+package com.corp.maveri.pchell.maveri.Database;
 
 public class DatabaseMessage {
 

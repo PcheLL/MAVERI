@@ -41,7 +41,7 @@
 
     </LinearLayout>
     <fragment
-       class= "com.example.wakeparkby.pchell.maveri.Group.GroupListSrc.GroupListFragment"
+       class= "com.corp.maveri.pchell.maveri.Group.GroupListSrc.GroupListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/ListFragment" />

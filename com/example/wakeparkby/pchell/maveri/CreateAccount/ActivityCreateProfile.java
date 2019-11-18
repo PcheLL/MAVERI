@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.CreateAccount;
+package com.corp.maveri.pchell.maveri.CreateAccount;
 
 import android.support.v7.app.*;
 import View.*;

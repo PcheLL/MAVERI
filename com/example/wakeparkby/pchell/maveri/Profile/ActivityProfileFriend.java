@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.Profile;
+package com.corp.maveri.pchell.maveri.Profile;
 
 import android.support.v7.app.*;
 import View.*;
