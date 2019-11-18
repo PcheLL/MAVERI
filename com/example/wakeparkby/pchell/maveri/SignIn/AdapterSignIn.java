@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.SignIn;
+package com.corp.maveri.pchell.maveri.SignIn;
 
 public class AdapterSignIn {
 }

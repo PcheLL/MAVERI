@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.Time;
+package com.corp.maveri.pchell.maveri.Time;
 
 import android.support.v7.app.*;
 

@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.Chat;
+package com.corp.maveri.pchell.maveri.Chat;
 
 public class AdapterChat {
 

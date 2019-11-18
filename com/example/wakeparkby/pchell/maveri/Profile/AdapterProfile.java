@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.Profile;
+package com.corp.maveri.pchell.maveri.Profile;
 
 public class AdapterProfile {
 

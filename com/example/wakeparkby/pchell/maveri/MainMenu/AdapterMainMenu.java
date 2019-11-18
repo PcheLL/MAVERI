@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.MainMenu;
+package com.corp.maveri.pchell.maveri.MainMenu;
 
 public class AdapterMainMenu {
 

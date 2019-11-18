@@ -1,8 +1,8 @@
-package com.example.wakeparkby.pchell.maveri.CreateAccount;
+package com.corp.maveri.pchell.maveri.CreateAccount;
 
 public class ChangeToArray {
 
-	private com.example.wakeparkby.pchell.maveri.CreateAccount.ListInterests listInterests = new ListInterests();
+	private com.corp.maveri.pchell.maveri.CreateAccount.ListInterests listInterests = new ListInterests();
 
 	/**
 	 * 

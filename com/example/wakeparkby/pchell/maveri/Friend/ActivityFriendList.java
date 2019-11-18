@@ -1,4 +1,4 @@
-package com.example.wakeparkby.pchell.maveri.Friend;
+package com.corp.maveri.pchell.maveri.Friend;
 
 import android.support.v7.app.*;
 
